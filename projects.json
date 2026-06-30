@@ -1,0 +1,67 @@
+[
+  {
+    "id": 1,
+    "title": "Nashville Housing Data Cleaning",
+    "tool": "SQL",
+    "tool_color": "#3b82f6",
+    "description": "Cleaned and standardized 56,477 rows of Nashville housing data using SQL Server Management Studio. Removed duplicates, standardized date formats, split address fields, and populated null values — transforming raw municipal data into an analysis-ready dataset.",
+    "insights": "Identified and removed hundreds of duplicate property records. Standardized 19 inconsistent column formats. Transformed raw address strings into structured city/state/zip fields. Result: a fully clean 56,477-row dataset with zero duplicates.",
+    "dataset_info": "56,477 rows, 19 columns. Source: Nashville municipal housing records. Covers property sales, owner addresses, land use classifications, and sale prices across Davidson County.",
+    "methodology": "Used SQL Server Management Studio. Key operations: ISNULL/COALESCE for null handling, PARSENAME and SUBSTRING for address splitting, ROW_NUMBER() OVER PARTITION for duplicate detection, ALTER TABLE for column standardization.",
+    "image_url": "https://maven-uploads.s3.amazonaws.com/117568857/projects/nashville%20home.jpg",
+    "sort_order": 1,
+    "is_featured": true
+  },
+  {
+    "id": 2,
+    "title": "BMI & Waist-to-Hip Ratio Calculator",
+    "tool": "Python",
+    "tool_color": "#f59e0b",
+    "description": "Built an interactive health metrics calculator using Python (Anaconda/Jupyter). Computes BMI and waist-to-hip ratio with real-time category classification across 4 BMI ranges and sex-specific WHR thresholds.",
+    "insights": "4 BMI categories: Underweight (<18.5), Healthy Weight (18.5–24.9), Overweight (25–29.9), Above Obesity (≥30). WHR thresholds differ by biological sex. Tool provides instant clinical context for any height/weight combination.",
+    "dataset_info": "Formula-based calculator — no external dataset. Uses WHO-standard BMI formula (weight kg / height m²) and sex-specific WHR risk thresholds from clinical guidelines.",
+    "methodology": "Python with Jupyter Notebook. Libraries: pandas for data handling, ipywidgets for interactive inputs. BMI formula: weight(kg) / height(m)². WHR formula: waist(in) / hip(in).",
+    "image_url": "https://maven-uploads.s3.amazonaws.com/117568857/projects/bmi-main.jpg",
+    "sort_order": 2,
+    "is_featured": true
+  },
+  {
+    "id": 3,
+    "title": "Data Professional Survey Dashboard",
+    "tool": "Power BI",
+    "tool_color": "#f59e0b",
+    "description": "Analyzed survey responses from 630 data professionals worldwide to uncover salary trends, tool preferences, and career satisfaction scores. Built an interactive Power BI dashboard with cross-filtering across demographics and roles.",
+    "insights": "630 participants, average age 29.87. Python is the most popular language among data professionals. Significant salary variation by job title — Data Scientists earn ~2x more than Data Analysts. Work/life balance rated higher than salary satisfaction on average.",
+    "dataset_info": "630 survey responses. Fields include: job title, salary, country, programming language, years of experience, education level, industry, and satisfaction scores (salary, work/life balance, coworkers, management, upward mobility, learning opportunities).",
+    "methodology": "Data cleaned in Excel, visualized in Power BI. Used DAX measures for average calculations. Cross-filtering slicers by country, job title, and gender. KPI cards for headline metrics.",
+    "image_url": "https://maven-uploads.s3.amazonaws.com/117568857/projects/powerbi-dashboard.png",
+    "sort_order": 3,
+    "is_featured": true
+  },
+  {
+    "id": 4,
+    "title": "Airbnb Seattle 2016 Analysis",
+    "tool": "Tableau",
+    "tool_color": "#0ea5e9",
+    "description": "Analyzed 323,346 Airbnb listing entries across Seattle to identify revenue trends, pricing by location, and seasonal demand patterns. Built a multi-sheet Tableau dashboard with map, bar, and time-series views.",
+    "insights": "Zip code 98134 commands the highest average listing price. Revenue peaks sharply on December 25th at $2.1M — holiday demand drives a clear seasonal spike. Listings with more bedrooms generate higher per-night revenue but lower occupancy rates.",
+    "dataset_info": "323,346 entries across 3 worksheets: Listings, Reviews, and Calendar. Covers all Seattle Airbnb activity in 2016. Fields include: zip code, price, number of bedrooms, availability, review scores, and host details.",
+    "methodology": "Data joined across 3 sheets in Tableau using listing ID as the key. Built 5 views: avg price by zip (bar), yearly revenue (line), price by bedrooms (bar), homes by bedrooms (bar), and a full summary dashboard.",
+    "image_url": "https://maven-uploads.s3.amazonaws.com/117568857/projects/Dashboard%20complete.png",
+    "sort_order": 4,
+    "is_featured": true
+  },
+  {
+    "id": 5,
+    "title": "Bike Sales Dashboard",
+    "tool": "Excel",
+    "tool_color": "#22c55e",
+    "description": "Built a dynamic sales performance dashboard in Microsoft Excel analyzing 1,026 bike purchase records. Used PivotTables, slicers, and custom charts to surface regional profit trends and customer demographic patterns.",
+    "insights": "Pacific Region leads all regions in profit margins. Middle Age bracket (31–54) is the highest-converting customer segment. Commute distance of 0–1 miles correlates with the highest purchase rates. Male customers slightly outpace female in total purchases.",
+    "dataset_info": "1,026 rows, 13 columns. Fields: customer ID, marital status, gender, income, children, education, occupation, home ownership, cars, commute distance, region, age bracket, and purchase decision.",
+    "methodology": "Microsoft Excel. Built PivotTables for regional and demographic segmentation. Used slicers for interactive filtering by marital status, region, and education. Custom bar and line charts for trend visualization.",
+    "image_url": "https://maven-uploads.s3.amazonaws.com/117568857/projects/bike-sales.png",
+    "sort_order": 5,
+    "is_featured": false
+  }
+]
